@@ -7,7 +7,8 @@ public class Main19 {
     public static void main(String[] args){
 
         while(true) {
-            String[] months = new String[]{"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+            String[] months = new String[]{"January", "February", "March", "April", "May", "June", "July", "August",
+                                "September", "October", "November", "December"};
             int n;
             Scanner scn = new Scanner(System.in);
             System.out.println("Enter a number of a month: ");

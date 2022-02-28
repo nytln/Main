@@ -4,12 +4,17 @@ import java.util.Scanner;
 
 public class Main24game {
     public static void main(String[] args){
+
         int num1, num2, result;
-        boolean isTrue = true;
-        num1 = (int) Math.round(Math.random() * 100);
+        boolean isTrue2 = true;
         Scanner scn = new Scanner(System.in);
+        Scanner scn2 = new Scanner(System.in);
+
         System.out.println("This is a game");
         System.out.println("Rules: First number is a secret. Sum of two numbers must be lower than 100");
+        while(isTrue2){
+            boolean isTrue = true;
+            num1 = (int) Math.round(Math.random() * 100);
         System.out.println("First number is a secret, please enter a second number: ");
         num2 = scn.nextInt();
         while(isTrue) {
@@ -27,7 +32,10 @@ public class Main24game {
                     System.out.println("Secret number was: " + num1);
                 }
                 isTrue = false;
+                }
             }
+            System.out.println("Try again? (Yes/No)");
+            isTrue2 = scn2.nextLine().equalsIgnoreCase("Yes");
         }
     }
 }
