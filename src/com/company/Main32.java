@@ -24,8 +24,12 @@ public class Main32 {
                 total++;
             }
         }
+        int i = 0;
         for(String element : totalwords){
-            words++;
+            if(!totalwords[i].equals("")){
+                words++;
+            }
+            i++;
         }
         System.out.println("Special letter count: " + count);
         System.out.println("All letter count: " + total);
